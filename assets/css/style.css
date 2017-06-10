@@ -9,6 +9,10 @@ body {
 	background-image: url("../images/swirl_pattern/swirl_pattern.png") ;
 }
 
+.wrapper {
+	width: 100%;
+}
+
 .topnav {
 		/*Positioning Properties*/
 	position: relative ;
@@ -110,6 +114,7 @@ h4 {
 	border-style: solid ;
 	border-width: 1px ;
 	border-color: #dddddd ;
+	margin-bottom: 120px;
 }
 
 .message {
@@ -189,4 +194,102 @@ footer {
 	bottom: 0 ;
 	overflow: hidden ;
 	z-index: 4;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 980px or less. */
+
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.mainbox {
+		width: 440px;
+		margin-right: 0;
+	}
+
+	.mainpic {
+		float: left;
+		padding: 10px;
+		width: 100%;
+	}
+
+	.img1 {
+		size: 100%
+	}
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.mainbox {
+		width: 750px;
+		margin-right: 0;
+	}
+
+	.mainpic {
+		float: left;
+		padding: 10px;
+		width: 100%;
+	}
+
+	#sidebar {
+		width: 100%;
+	}
+
+	.img1 {
+		size: 100%
+	}
+
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width: 640px) {
+
+	h1 {
+		width: 100%;
+		margin-left: 0px;
+		position: static;
+	}
+
+	.topnav {
+		position: static;
+		width: 100%;
+		margin-right: 0;
+		text-align: center;
+		font-size: 24px;
+		word-spacing: 55px;
+		padding: 25px;
+	}
+
+	#sidebar {
+		position: static;
+		width: 600px;
+		margin-left: 20px;
+		margin-right: 0px;
+		margin-bottom: 120px;
+		text-align: left;
+	}
+
+	.mainbox {
+		width: 600px;
+		margin-right: 50px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+
+}
+
 }
