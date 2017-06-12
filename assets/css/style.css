@@ -27,6 +27,7 @@ body {
 	border-bottom-color: #cccccc ;
 	border-bottom-style: solid ;
 	border-width: 2px;
+	word-spacing: 20px;
 }
 
 a {
@@ -94,7 +95,6 @@ h4 {
 }
 
 .textBox {
-
 	margin-top: 20px ;
 }
 
@@ -205,20 +205,64 @@ footer {
 		width: 100%;
 	}
 
+	h1 {
+		font-size: 18px;
+		width: 210px;
+	}
+
+	h2 {
+		font-size: 22px ;
+		line-height: 50px ;
+		margin-bottom: 0px ;
+	}
+
+	h3 {
+		font-size: 19px ;
+		margin-bottom: 20px ;
+	}
+
+	.topnav {
+		font-size: 14px;
+	}
+
 	.mainbox {
-		width: 440px;
+		width: 470px;
 		margin-right: 0;
+		font-size: 15px;
+	}
+
+	#sidebar {
+		width: 250px;
 	}
 
 	.mainpic {
-		float: left;
-		padding: 10px;
+		padding: 0px;
 		width: 100%;
+		margin-bottom: 10px;
+		margin-top: 10px;
 	}
 
 	.img1 {
 		size: 100%
 	}
+
+	.icon {
+	 	width: 60px;
+		margin-bottom: 15px ;
+	}	
+
+	.portfolioPics {
+		margin-top: 20px;
+		width: 420px;
+		margin-left: -15px;
+		height: 300px;
+	}
+
+	h4 {
+	    width: 420px;
+		margin-left: -15px;
+	}
+
 }
 
 /*
@@ -227,27 +271,49 @@ footer {
 */
 @media screen and (max-width: 768px) {
 
+	h1 {
+		margin-left: 32px;
+	}
+
 	.wrapper {
 		width: 100%;
 	}
 
 	.mainbox {
-		width: 750px;
-		margin-right: 0;
+		width: 700px;
+		margin-right: 100px;
+		margin-left: 32px;
+		margin-bottom: 0px;
 	}
 
 	.mainpic {
 		float: left;
 		padding: 10px;
-		width: 100%;
-	}
-
-	#sidebar {
-		width: 100%;
+		width: 320px;
+		height: 270px;
 	}
 
 	.img1 {
 		size: 100%
+	}
+
+	#sidebar {
+		position: static;
+		width: 700px;
+		margin-left: 32px;
+		margin-right: 0px;
+		margin-bottom: 120px;
+		text-align: left;
+		padding-left: 35px;
+	}
+
+	.portfolioPics {
+		margin-top: 20px;
+		width: 290px;
+	}
+
+	h4 {
+	    width: 290px;
 	}
 
 }
@@ -262,6 +328,7 @@ footer {
 		width: 100%;
 		margin-left: 0px;
 		position: static;
+		font-size: 30px;
 	}
 
 	.topnav {
@@ -288,6 +355,22 @@ footer {
 		margin-right: 50px;
 		margin-left: 20px;
 		margin-bottom: 10px;
+	}
+
+	.img1 {
+		size: 100%
+	}
+
+	.portfolioPics {
+		margin-top: 20px;
+		width: 540px;
+		height: 300px;
+		margin-left: -10px;
+	}
+
+	h4 {
+	    width: 540px;
+	    margin-left: -10px;
 	}
 
 }
